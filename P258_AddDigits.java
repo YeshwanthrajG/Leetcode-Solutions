@@ -11,7 +11,7 @@ result has only one digit, and return it
 https://leetcode.com/problems/add-digits/description/
 */
 
-class Solution {
+class AddDigits {
     public int addDigits(int num) {
         if(num<10)
             return num;
