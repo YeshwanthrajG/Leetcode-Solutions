@@ -11,7 +11,10 @@ result has only one digit, and return it
 https://leetcode.com/problems/add-digits/description/
 */
 
-class AddDigits {
+
+//Brute Force Approach
+
+class AddDigitsBruteForce {
     public int addDigits(int num) {
         if(num<10)
             return num;
@@ -22,5 +25,19 @@ class AddDigits {
             temp=(temp%10)+addDigits(temp/10);
 
         return temp;
+    }
+}
+
+// Optimal Approach O(1)
+
+class AddDigitsOptimal {
+    public int addDigits(int num) {
+        if(num==0)
+            return 0;
+            
+        else if(num%9==0)
+            return 9;
+
+        return num%9;
     }
 }
