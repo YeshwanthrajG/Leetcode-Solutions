@@ -15,7 +15,7 @@ Return the minimum length of the final string s that you can achieve.
 */
 
 /* Problem Link
-https://leetcode.com/problems/construct-k-palindrome-strings/description/?envType=daily-question&envId=2025-01-11
+https://leetcode.com/problems/minimum-length-of-string-after-operations/
 */
 
 class MinimumLengthofStringAfterOperations {
