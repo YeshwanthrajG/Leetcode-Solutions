@@ -1,0 +1,28 @@
+Problem ID : 175 
+
+Problem : Combine Two Tables
+
+Statement : Table: Person
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| personId    | int     |
+| lastName    | varchar |
+| firstName   | varchar |
++-------------+---------+
+personId is the primary key (column with unique values) for this table.
+This table contains information about the ID of some persons and their first and last names.
+ 
+
+Problem Link
+https://leetcode.com/problems/combine-two-tables/description/
+
+
+
+/* Write your PL/SQL query statement below */
+
+-- SELECT firstname, lastname FROM Person UNION SELECT city, state FROM Address;
+
+select firstname, lastname, city, state
+from Person natural left join Address;
