@@ -2,9 +2,7 @@
 Problem ID : 2894 
 
 Problem : Divisible and Non-divisible Sums Difference
-
 Statement : You are given positive integers n and m.
-
 Define two integers as follows:
 
 num1: The sum of all integers in the range [1, n] (both inclusive) that are not divisible by m.
