@@ -16,7 +16,6 @@ Note that a node is always target to itself.
 
 Return an array of n integers answer, where answer[i] is the maximum possible number of nodes target to 
 node i of the first tree if you have to connect one node from the first tree to another node in the second tree.
-
 Note that queries are independent from each other. That is, for every query you will remove the added 
 edge before proceeding to the next query.
 */
