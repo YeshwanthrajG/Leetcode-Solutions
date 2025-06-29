@@ -55,6 +55,5 @@ class Solution:
         # Add remaining elements from nums2, if any
         while j < len(nums2):
             result.append(nums2[j])
-            j += 1
-        
+            j += 1        
         return result
