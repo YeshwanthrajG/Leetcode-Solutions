@@ -29,10 +29,12 @@ class Solution {
         max=0;
         HashSet<Integer> set=new HashSet<>();
         for(int i=0;i<nums.length;i++){
-            if(nums[i]>0)            set.add(nums[i]);
+            if(nums[i]>0)            
+                set.add(nums[i]);
         }
         for(int i:set){
-            if(i>0) max+=i;
+            if(i>0) 
+                max+=i;
         }
         return max;
     }
