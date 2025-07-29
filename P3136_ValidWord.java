@@ -36,8 +36,10 @@ class Solution {
                 else
                     conCount++;
             }
-            else if(Character.isDigit(i))   digCount++;
-            else    return false;
+            else if(Character.isDigit(i))   
+                digCount++;
+            else    
+                return false;
         }
         if(charCount+digCount>=3&&vowCount>=1&&conCount>=1)  return true;
         return false;
