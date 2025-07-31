@@ -26,8 +26,10 @@ class Solution {
         for(int i:nums){
             maxVal=Math.max(maxVal,i);
         }
+
         int countMax=0;
         int currLen=0;
+        
         for(int i:nums){
             if(i==maxVal)   currLen++;
             else   {
