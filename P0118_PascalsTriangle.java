@@ -20,7 +20,6 @@ class Solution {
 
         for (int i = 0; i < numRows; i++) {
             List<Integer> row = new ArrayList<>(Collections.nCopies(i + 1, 1));
-            
             for (int j = 1; j < i; j++) {
                 int val = pascal.get(i - 1).get(j - 1) + pascal.get(i - 1).get(j);
                 row.set(j, val);
