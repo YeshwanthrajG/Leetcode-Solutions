@@ -17,3 +17,17 @@ Every close bracket has a corresponding open bracket of the same type.
 https://leetcode.com/problems/valid-parentheses/description/
 */
 
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> st=new Stack<>();
+        for(char c:s.toCharArray()){
+            if(c=='('||c=='{'||c=='[')  st.push(c);
+            else if(c==')' && !st.isEmpty() && st.peek()=='(') st.pop();
+            else if(c=='}' && !st.isEmpty() && st.peek()=='{') st.pop();
+            else if(c==']' && !st.isEmpty() && st.peek()=='[') st.pop();
+            else return false;
+        }
+        if(!st.isEmpty())   return false;
+        return true;
+    }
+}
