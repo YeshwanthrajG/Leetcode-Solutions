@@ -12,9 +12,18 @@ An integer n is a power of two, if there exists an integer x such that n == 2x.
 https://leetcode.com/problems/power-of-two/description/?envType=daily-question&envId=2025-08-09
 */
 
+
+// Solution 1
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        //if(n<=0)    return false;
         return n>0 && (n&n-1)==0;
+    }
+}
+
+// Solution 2 
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        int e=(int)(Math.log(n)/Math.log(2));
+        return (n>0 && (int)(Math.pow(2,e))%n==0);
     }
 }
