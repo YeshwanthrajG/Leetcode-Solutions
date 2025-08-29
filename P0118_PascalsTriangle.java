@@ -13,7 +13,6 @@ https://leetcode.com/problems/pascals-triangle/description/?envType=daily-questi
 */
 
 import java.util.*;
-
 class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> pascal = new ArrayList<>();
