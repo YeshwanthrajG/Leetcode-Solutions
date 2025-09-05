@@ -28,6 +28,6 @@ class Solution {
         int d2=Math.abs(y-z);
         if(d1==d2)  return 0;
         else if(d1<d2)  return 1;
-        else    return 2;
+        else  return 2;
     }
 }
