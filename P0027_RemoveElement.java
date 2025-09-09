@@ -38,18 +38,31 @@ https://leetcode.com/problems/remove-element/description/
 
 class Solution {
     public int removeElement(int[] nums, int val) {
-        int left=0,right=nums.length-1;
-        while(left<=right){
-            if(nums[left]==val){
-                int temp=nums[left];
-                nums[left]=nums[right];
-                nums[right]=temp;
-                right--;
-            }
-            else{
-                left++;
+
+        // Solution 1 : O(n)
+        // int left=0,right=nums.length-1;
+        // while(left<=right){
+        //     if(nums[left]==val){
+        //         int temp=nums[left];
+        //         nums[left]=nums[right];
+        //         nums[right]=temp;
+        //         right--;
+        //     }
+        //     else{
+        //         left++;
+        //     }
+        // }
+        // return left;
+
+
+        // Solution 2 : O(n) (More optimised)
+        int k=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=val){
+                nums[k]=nums[i];
+                k++;
             }
         }
-        return left;
+        return k;
     }
 }
