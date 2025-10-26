@@ -19,6 +19,9 @@ https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/?envT
 class Solution {
 public:
     int totalMoney(int n) {
+
+        // Approach 1
+
         int i=0;
         int sum=0;
         while(n>0){
@@ -30,5 +33,11 @@ public:
             }
         }
         return sum;
+
+        // Approach 2 (Optimised : O(n))
+
+        int a=(int)n/7;
+        int b=n%7;
+        return a*28+7*(a-1)*(int)a/2+(a+1+a+b)*(int)b/2;
     }
 };
