@@ -20,7 +20,7 @@ class Solution {
                 n[i]='9';
                 break;
             }
-        }
+        } 
         return Integer.parseInt(new String(n));
     }
 }
