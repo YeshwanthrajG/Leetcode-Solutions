@@ -27,7 +27,7 @@ class Solution {
     public int getLucky(String s, int k) {
         int res=0;
         // long zero=0;
-        // int ans=0;
+        // int ans = 0;
         for(int i=0;i<s.length();i++){
             res+=digitSum(s.charAt(i)-96);
         }
