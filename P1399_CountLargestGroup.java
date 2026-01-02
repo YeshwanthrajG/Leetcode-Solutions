@@ -18,7 +18,6 @@ class Solution {
     public int countLargestGroup(int n) {
         Map<Integer, Integer> map = new HashMap<>();
         int maxSize = 0;
-
         for (int i = 1; i <= n; i++) {
             int sum = 0, num = i;
             while (num > 0) {
