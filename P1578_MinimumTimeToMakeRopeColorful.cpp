@@ -25,7 +25,6 @@ public:
         int cost=0;
         for(int i=1;i<n;i++){
             int currMax=0;
-    
             while(i<n && colors[i]==colors[i-1]){
                 cost+=neededTime[i-1];
                 currMax=max(currMax, neededTime[i-1]);
