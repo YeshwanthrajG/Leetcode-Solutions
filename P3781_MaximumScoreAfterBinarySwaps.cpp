@@ -30,6 +30,7 @@ public:
             }
         }
         if(ones==0) return 0;
+        
         priority_queue<long long> pq;
         long long ans=0;
         int pos=0;
