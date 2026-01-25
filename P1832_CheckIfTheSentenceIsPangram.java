@@ -14,7 +14,7 @@ https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/?envT
 */
 
 class Solution {
-    public boolean checkIfPangram(String sentence) {
+    public boolean checkIfPangram(String sentence) { 
         if(sentence.length()<26)  return false;
         Set<Character> set=new HashSet<>();
         for(char ch:sentence.toCharArray()){
