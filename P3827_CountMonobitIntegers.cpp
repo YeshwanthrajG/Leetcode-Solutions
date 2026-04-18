@@ -14,6 +14,8 @@ Return the count of Monobit integers in the range [0, n] (inclusive).
 https://leetcode.com/problems/count-monobit-integers/description/
 */
 
+// Approach 1
+
 class Solution {
 public:
     int countMonobit(int n) {
@@ -33,5 +35,14 @@ public:
             count++;
         }
         return count;
+    }
+};
+
+// Approach 2
+
+class Solution {
+public:
+    int countMonobit(int n) {
+        return 1+log2(n+1);
     }
 };
