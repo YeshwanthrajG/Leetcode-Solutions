@@ -39,7 +39,7 @@ public:
                     res[x--][r-1-i]='#';
                 }
             }
-            return res;
         }
+        return res;
     }
 };
