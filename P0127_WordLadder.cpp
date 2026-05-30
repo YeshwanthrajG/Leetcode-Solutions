@@ -45,3 +45,37 @@ public:
         return 0;
     }
 };
+
+
+
+
+
+class Solution {
+public:
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        unordered_set<string> set(wordList.begin(), wordList.end());
+        queue<pair<string, int>> q;
+        int level=1;
+        q.push({beginWord, level});
+        set.erase(beginWord);
+        while(!q.empty()){
+            string w=q.front().first;
+            int l=q.front().second;
+            q.pop();
+            if(w==endWord) return l;
+            int n=w.size();
+            for(int i=0;i<n;i++){
+                char ori=w[i];
+                for(char c='a';c<='z';c++){
+                    w[i]=c;
+                    if(set.find(w)!=set.end()) {
+                        q.push({w, l+1});
+                        set.erase(w);
+                    }
+                }
+                w[i]=ori;
+            }
+        }
+        return 0;
+    }
+};
