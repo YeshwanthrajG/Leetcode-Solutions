@@ -17,6 +17,25 @@ The test cases are generated so that the answer will be less than or equal to 2 
 https://leetcode.com/problems/unique-paths/description/
 */
 
+// Approach 1
+
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        vector<int> above(n, 1);
+        for(int r=1;r<m;r++){
+            vector<int> curr(n, 1);
+            for(int c=1;c<n;c++){
+                curr[c]=curr[c-1]+above[c];
+            }
+            above=curr;
+        }
+        return above[n-1];
+    }
+};
+
+// Approach 2
+
 class Solution {
 public:
     int uniquePaths(int m, int n) {
