@@ -18,6 +18,8 @@ Return the modified array after rearranging the elements to satisfy the aforemen
 https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
 */
 
+// Approach 1 : Bruteforce
+
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) {
@@ -37,6 +39,30 @@ public:
         }
         if(toggle && i<n) res.push_back(pos[i++]);
         if(!toggle && j<m) res.push_back(neg[j++]);
+        return res;
+    }
+};
+
+
+// Approach 2 : Optimal (only result array)
+
+
+class Solution {
+public:
+    vector<int> rearrangeArray(vector<int>& nums) {
+        int n=nums.size();
+        vector<int> res(n);
+        int posIdx=0, negIdx=1;
+        for(int i=0;i<n;i++){
+            if(nums[i]<0){
+                res[negIdx]=nums[i];
+                negIdx+=2;
+            }
+            else{
+                res[posIdx]=nums[i];
+                posIdx+=2;
+            }
+        }
         return res;
     }
 };
