@@ -17,6 +17,8 @@ Return an integer representing the value of x * sum.
 https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/description/
 */
 
+// Approach 1
+
 class Solution {
 public:
     long long sumAndMultiply(int n) {
@@ -31,5 +33,27 @@ public:
             }
         }
         return num*sum;
+    }
+};
+
+// Approach 2
+
+class Solution {
+public:
+    long long sumAndMultiply(int n) {
+        if(n==0) return 0;
+        long long res=0;
+        int sum=0;
+        int num=n, temp=0;
+        int i=0;
+        while(num>0){
+            temp=num%10;
+            if(temp>0){
+                res=(temp*pow(10,i++))+res;
+                sum+=temp;
+            }
+            num/=10;
+        }
+        return res*sum;
     }
 };
