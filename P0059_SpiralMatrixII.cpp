@@ -31,6 +31,6 @@ public:
                 left++;
             }
         }
-        return res;
+        return res; 
     }
 };
