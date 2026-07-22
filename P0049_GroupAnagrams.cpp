@@ -11,6 +11,29 @@ in any order.
 https://leetcode.com/problems/group-anagrams/description/
 */
 
+// Approach 1
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> map;
+        for(auto &x:strs){
+            string k=x;
+            sort(k.begin(), k.end());
+            map[k].push_back(x);
+        }
+        vector<vector<string>> res;
+        for(auto &e:map){
+            res.push_back(e.second);
+        }
+        return res;
+    }
+};
+
+
+
+// Approach 2
+
+
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
