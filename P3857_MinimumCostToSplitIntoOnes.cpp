@@ -1,0 +1,24 @@
+/* 
+Problem ID : 3857 
+
+Problem : Minimum Cost to Split into Ones
+
+Statement : You are given an integer n.
+
+In one operation, you may split an integer x into two positive integers a and b such that a + b = x.
+
+The cost of this operation is a * b.
+
+Return an integer denoting the minimum total cost required to split the integer n into n ones.
+*/
+
+/* Problem Link
+https://leetcode.com/problems/minimum-cost-to-split-into-ones/description/
+*/
+
+class Solution {
+public:
+    int minCost(int n) {
+        return n*(n-1)/2;
+    }
+};
