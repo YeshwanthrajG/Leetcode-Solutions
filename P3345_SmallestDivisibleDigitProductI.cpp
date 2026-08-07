@@ -21,7 +21,6 @@ public:
         }
         return res;
     }
-
     int smallestNumber(int n, int t) {
         int i=n;
         int p=digProd(i);
