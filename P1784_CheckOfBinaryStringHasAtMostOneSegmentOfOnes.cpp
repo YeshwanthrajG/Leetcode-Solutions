@@ -3,8 +3,7 @@ Problem ID : 1784
 
 Problem : Check if Binary String Has at Most One Segment of Ones
 
-Statement : Given a binary string s ​​​​​without leading zeros, 
-return true​​​ if s contains at most one contiguous segment of ones. Otherwise, return false.
+Statement : Given a binary string s ​​​​​without leading zeros, return true​​​ if s contains at most one contiguous segment of ones. Otherwise, return false.
 */
 
 /* Problem Link
