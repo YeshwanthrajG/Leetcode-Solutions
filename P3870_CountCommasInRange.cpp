@@ -18,6 +18,7 @@ Numbers with fewer than 4 digits contain no commas.
 https://leetcode.com/problems/count-commas-in-range/description/?envType=daily-question&envId=2026-09-08
 */
 
+// Approach 1
 class Solution {
 public:
     int countCommas(int n) {
@@ -27,5 +28,15 @@ public:
             total+=(digits-1)/3;
         }
         return total;
+    }
+};
+
+
+// Approach 2
+class Solution {
+public:
+    int countCommas(int n) {
+        if(n<1000) return 0;
+        return (n-1000)+1;
     }
 };
