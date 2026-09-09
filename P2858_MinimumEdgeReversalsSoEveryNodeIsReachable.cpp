@@ -6,8 +6,7 @@ Problem : Minimum Edge Reversals So Every Node Is Reachable
 Statement : There is a simple directed graph with n nodes labeled from 0 to n - 1. The graph would 
 form a tree if its edges were bi-directional.
 
-You are given an integer n and a 2D integer array edges, where edges[i] = [ui, vi] represents a 
-directed edge going from node ui to node vi.
+You are given an integer n and a 2D integer array edges, where edges[i] = [ui, vi] represents a directed edge going from node ui to node vi.
 
 An edge reversal changes the direction of an edge, i.e., a directed edge going from node ui to node vi 
 becomes a directed edge going from node vi to node ui.
