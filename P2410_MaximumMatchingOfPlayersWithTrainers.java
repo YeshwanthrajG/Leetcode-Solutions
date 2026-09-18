@@ -3,8 +3,7 @@ Problem ID : 2410
 
 Problem : Maximum Matching of Players With Trainers
 
-Statement : You are given a 0-indexed integer array players, where players[i] represents the ability of the 
-ith player. You are also given a 0-indexed integer array trainers, where trainers[j] represents the training 
+Statement : You are given a 0-indexed integer array players, where players[i] represents the ability of the ith player. You are also given a 0-indexed integer array trainers, where trainers[j] represents the training 
 capacity of the jth trainer.
 
 The ith player can match with the jth trainer if the player's ability is less than or equal to the trainer's 
