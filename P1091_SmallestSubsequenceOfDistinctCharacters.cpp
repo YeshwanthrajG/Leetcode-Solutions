@@ -3,8 +3,7 @@ Problem ID : 1091
 
 Problem : Smallest Subsequence of Distinct Characters
 
-Statement : Given a string s, return the lexicographically smallest subsequence of s that contains 
-all the distinct characters of s exactly once.
+Statement : Given a string s, return the lexicographically smallest subsequence of s that contains all the distinct characters of s exactly once.
 */
 
 /* Problem Link
