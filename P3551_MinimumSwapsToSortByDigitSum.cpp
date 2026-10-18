@@ -56,7 +56,6 @@ public:
                 }
             }
         }
-
         return n - cycles;
     }
 };
