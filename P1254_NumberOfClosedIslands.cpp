@@ -23,7 +23,6 @@ public:
         grid[i][j]=1;
         return isClosed(grid, i+1, j) & isClosed(grid, i-1, j) & isClosed(grid, i, j+1) & isClosed(grid, i, j-1);
     }
-
     int closedIsland(vector<vector<int>>& grid) {
         m=grid.size(), n=grid[0].size();
         int res=0;
