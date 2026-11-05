@@ -14,7 +14,6 @@ You are given a string word.
 Return true if word is valid, otherwise, return false.
 
 Notes:
-
 'a', 'e', 'i', 'o', 'u', and their uppercases are vowels.
 A consonant is an English letter that is not a vowel.
 */
