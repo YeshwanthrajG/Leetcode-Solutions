@@ -21,7 +21,7 @@ https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/descr
 class Solution {
     public int minimumCost(int[] cost) {
         Arrays.sort(cost);
-        int start=0,end=cost.length-1,minCost=0;
+        int start=0,end=cost.length-1, minCost=0;
         int flag=0;
         while(end>=0){
             if(flag==2){
