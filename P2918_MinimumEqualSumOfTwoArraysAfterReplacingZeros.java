@@ -21,7 +21,6 @@ class Solution {
             if(i == 0) nums1Zeroes++;
             sum1 += i;
         }
-
         for(int i : nums2){
             if(i == 0) nums2Zeroes++;
             sum2 += i;
