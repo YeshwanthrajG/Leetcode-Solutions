@@ -7,8 +7,7 @@ Statement : You are given an integer array nums of length n and a 2D array queri
 
 Each queries[i] represents the following action on nums:
 
-Decrement the value at each index in the range [li, ri] in nums by at most 1.
-The amount by which the value is decremented can be chosen independently for each index.
+Decrement the value at each index in the range [li, ri] in nums by at most 1. The amount by which the value is decremented can be chosen independently for each index.
 A Zero Array is an array with all its elements equal to 0.
 
 Return the maximum number of elements that can be removed from queries, such that nums can still be converted 
